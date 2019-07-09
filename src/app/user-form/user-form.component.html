@@ -1,5 +1,0 @@
-<div class="user-form" *ngIf="user">
-  <label for="name">User name is {{user.name}}</label><br/>
-  <input [(ngModel)]="user.name" id="name">
-  <button (click)="handleConfirm.emit(user)">Submit</button>
-</div>
