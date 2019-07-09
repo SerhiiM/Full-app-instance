@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let user of userService.userList$ | async" class="user-block">
+    <b class="user-id">{{user.id}}.</b><span class="user-name">{{user.name}}</span>
+    <button class="delete-btn" (click)="delete(user.id)">Delete</button>
+    <a class="update-btn" [routerLink]="['/update-user', user.id]">Update</a>
+  </div>
+</div>
